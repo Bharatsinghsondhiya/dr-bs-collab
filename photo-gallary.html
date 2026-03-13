@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>फोटो आणि व्हिडिओ गॅलरी - ग्रामपंचायत जातेगाव</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="photo-gallary.css" />
+</head>
+<body>
+
+    <!-- Page Header -->
+    <div class="page-heading">
+        <h2>फोटो - व्हिडिओ गॅलरी आणि मिडीया</h2>
+    </div>
+
+    <main class="container-fluid px-4 px-lg-5 pb-5" style="max-width: 1400px;">
+        
+        <!-- Tab Navigation -->
+        <div class="tabs-wrapper">
+            <ul class="nav tab-pills" id="galleryTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill active" id="tab-all" data-bs-toggle="pill" data-bs-target="#panel-all" type="button" role="tab" aria-selected="true">सर्व पहा</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-meeting" data-bs-toggle="pill" data-bs-target="#panel-meeting" type="button" role="tab" aria-selected="false">सभा</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-campaign" data-bs-toggle="pill" data-bs-target="#panel-campaign" type="button" role="tab" aria-selected="false">अभियान उपक्रम</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-projects" data-bs-toggle="pill" data-bs-target="#panel-projects" type="button" role="tab" aria-selected="false">विकासकामे / योजना</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-cultural" data-bs-toggle="pill" data-bs-target="#panel-cultural" type="button" role="tab" aria-selected="false">सामाजिक व सांस्कृतिक कार्यक्रम</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-news" data-bs-toggle="pill" data-bs-target="#panel-news" type="button" role="tab" aria-selected="false">पेपर कात्रणे</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link tab-pill" id="tab-video" data-bs-toggle="pill" data-bs-target="#panel-video" type="button" role="tab" aria-selected="false">व्हिडिओ गॅलरी</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="galleryTabsContent">
+            
+            <!-- PANEL 1: ALL (Summary View) -->
+            <div class="tab-pane fade show active" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
+                
+                <!-- Meeting Section -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">सभा</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage1.jpg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage2.jpg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage3.jpeg" alt="ग्रामसभा दि.28-11-2025"></div><p class="gallery-caption">ग्रामसभा दि.28-11-2025</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage4.jpeg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                    </div>
+                </section>
+
+                <!-- Campaign Section -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">अभियान उपक्रम</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage5.jpg" alt="हात धुवा दिन"></div><p class="gallery-caption">हात धुवा दिन</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage6.jpg" alt="करवसुली अभियान कॅम्प"></div><p class="gallery-caption">करवसुली अभियान कॅम्प</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage7.jpg" alt="कर वसुली अभियान"></div><p class="gallery-caption">कर वसुली अभियान</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage8.jpeg" alt="मुख्यमंत्री समृध्द पंचायतराज अभियान-शुभारंभ कार्यक्रम"></div><p class="gallery-caption">मुख्यमंत्री समृध्द पंचायतराज अभियान-शुभारंभ कार्यक्रम</p></div></div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">विकासकामे / योजना</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage9.jpeg" alt="JJM व आधीची पाण्याची टाकी"></div><p class="gallery-caption">JJM व आधीची पाण्याची टाकी</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage10.jpeg" alt="पाण्याच्या टाकीस कलर देण्यात आला"></div><p class="gallery-caption">पाण्याच्या टाकीस कलर देण्यात आला</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage11.jpg" alt="वृक्षलागवड"></div><p class="gallery-caption">वृक्षलागवड</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage12.jpg" alt="आशा कार्यकर्ती यांना ग्रामपंचायत तर्फे मोबाईल फोन वाटप"></div><p class="gallery-caption">आशा कार्यकर्ती यांना ग्रामपंचायत तर्फे मोबाईल फोन वाटप</p></div></div>
+                    </div>
+                </section>
+
+                <!-- Cultural Section -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">सामाजिक व सांस्कृतिक कार्यक्रम</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage13.jpeg" alt="धार्मिक स्थळ- श्री. हनुमान मंदिर"></div><p class="gallery-caption">धार्मिक स्थळ- श्री. हनुमान मंदिर</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage14.jpeg" alt="धार्मिक स्थळ- विठ्ठल रखुमाई मंदिर"></div><p class="gallery-caption">धार्मिक स्थळ- विठ्ठल रखुमाई मंदिर</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage15.jpeg" alt="बाल हक्क कार्यक्रम PHC जातेगाव"></div><p class="gallery-caption">बाल हक्क कार्यक्रम PHC जातेगाव</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage16.jpg" alt="तंबाखूमुक्त गाव शपथ"></div><p class="gallery-caption">तंबाखूमुक्त गाव शपथ</p></div></div>
+                    </div>
+                </section>
+
+                <!-- News Section -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">पेपर कात्रणे</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage17.jpg" alt="लोकमत पेपर बातमी"></div><p class="gallery-caption">लोकमत पेपर बातमी</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage18.jpg" alt="मनरेगा- e-kyc"></div><p class="gallery-caption">मनरेगा- e-kyc</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage19.jpg" alt="घरपट्टी सूट - पेपर बातमी"></div><p class="gallery-caption">घरपट्टी सूट - पेपर बातमी</p></div></div>
+                    </div>
+                </section>
+
+                <!-- Video Section (Summary) -->
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">व्हिडिओ गॅलरी</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/QSIWokwl7ME" title="Video 1" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">जातेगाव शाळेचा कायापालट</p></div></div>
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/Z2E3mWeCuik" title="Video 2" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">जिल्हा परिषद शाळा जातेगाव</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 2: MEETING -->
+            <div class="tab-pane fade" id="panel-meeting" role="tabpanel" aria-labelledby="tab-meeting">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">सभा</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage1.jpg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage2.jpg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage3.jpeg" alt="ग्रामसभा दि.28-11-2025"></div><p class="gallery-caption">ग्रामसभा दि.28-11-2025</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage4.jpeg" alt="ग्रामसभा"></div><p class="gallery-caption">ग्रामसभा</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 3: CAMPAIGN -->
+            <div class="tab-pane fade" id="panel-campaign" role="tabpanel" aria-labelledby="tab-campaign">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">अभियान उपक्रम</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage5.jpg" alt="हात धुवा दिन"></div><p class="gallery-caption">हात धुवा दिन</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage6.jpg" alt="करवसुली अभियान कॅम्प"></div><p class="gallery-caption">करवसुली अभियान कॅम्प</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage7.jpg" alt="कर वसुली अभियान"></div><p class="gallery-caption">कर वसुली अभियान</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage8.jpeg" alt="मुख्यमंत्री समृध्द पंचायतराज अभियान-शुभारंभ कार्यक्रम"></div><p class="gallery-caption">मुख्यमंत्री समृध्द पंचायतराज अभियान-शुभारंभ कार्यक्रम</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 4: PROJECTS -->
+            <div class="tab-pane fade" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">विकासकामे / योजना</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage9.jpeg" alt="JJM व आधीची पाण्याची टाकी"></div><p class="gallery-caption">JJM व आधीची पाण्याची टाकी</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage10.jpeg" alt="पाण्याच्या टाकीस कलर देण्यात आला"></div><p class="gallery-caption">पाण्याच्या टाकीस कलर देण्यात आला</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage11.jpg" alt="वृक्षलागवड"></div><p class="gallery-caption">वृक्षलागवड</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage12.jpg" alt="आशा कार्यकर्ती यांना ग्रामपंचायत तर्फे मोबाईल फोन वाटप"></div><p class="gallery-caption">आशा कार्यकर्ती यांना ग्रामपंचायत तर्फे मोबाईल फोन वाटप</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 5: CULTURAL -->
+            <div class="tab-pane fade" id="panel-cultural" role="tabpanel" aria-labelledby="tab-cultural">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">सामाजिक व सांस्कृतिक कार्यक्रम</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage13.jpeg" alt="धार्मिक स्थळ- श्री. हनुमान मंदिर"></div><p class="gallery-caption">धार्मिक स्थळ- श्री. हनुमान मंदिर</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage14.jpeg" alt="धार्मिक स्थळ- विठ्ठल रखुमाई मंदिर"></div><p class="gallery-caption">धार्मिक स्थळ- विठ्ठल रखुमाई मंदिर</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage15.jpeg" alt="बाल हक्क कार्यक्रम PHC जातेगाव"></div><p class="gallery-caption">बाल हक्क कार्यक्रम PHC जातेगाव</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage16.jpg" alt="तंबाखूमुक्त गाव शपथ"></div><p class="gallery-caption">तंबाखूमुक्त गाव शपथ</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 6: NEWS -->
+            <div class="tab-pane fade" id="panel-news" role="tabpanel" aria-labelledby="tab-news">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">पेपर कात्रणे</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage17.jpg" alt="लोकमत पेपर बातमी"></div><p class="gallery-caption">लोकमत पेपर बातमी</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage18.jpg" alt="मनरेगा- e-kyc"></div><p class="gallery-caption">मनरेगा- e-kyc</p></div></div>
+                        <div class="col"><div class="gallery-card"><div class="gallery-img-wrap"><img src="images/pgimage19.jpg" alt="घरपट्टी सूट - पेपर बातमी"></div><p class="gallery-caption">घरपट्टी सूट - पेपर बातमी</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PANEL 7: VIDEOS -->
+            <div class="tab-pane fade" id="panel-video" role="tabpanel" aria-labelledby="tab-video">
+                <section class="gallery-section">
+                    <h3 class="section-subtitle">व्हिडिओ गॅलरी</h3>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/QSIWokwl7ME" title="Video 1" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">जातेगाव शाळेचा कायापालट</p></div></div>
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/Z2E3mWeCuik" title="Video 2" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">जिल्हा परिषद शाळा जातेगाव</p></div></div>
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/R0bW_Upelcc" title="Video 3" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">जनावरांचा गोठा लाभार्थी</p></div></div>
+                        <div class="col"><div class="gallery-card video-card"><div class="gallery-img-wrap ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/jHNCWjqtnMY" title="Video 4" frameborder="0" allowfullscreen></iframe></div><p class="gallery-caption">हर घर तिरंगा</p></div></div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
