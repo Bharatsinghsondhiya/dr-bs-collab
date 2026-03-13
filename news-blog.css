@@ -1,0 +1,421 @@
+/* ─── News & Blog Page Styles ─── */
+/* Works alongside Bootstrap 5.3 */
+
+:root {
+    --navy: #1a3a5c;
+    --navy-dark: #0f172a;
+    --accent: #f5a623;
+    --accent-hover: #e0961b;
+    --light-bg: #f8fafc;
+    --border: #e2e8f0;
+    --text: #334155;
+    --muted: #64748b;
+    --danger: #dc3545;
+    --card-radius: 12px;
+}
+
+body {
+    font-family: 'Mukta', 'Tiro Devanagari Marathi', sans-serif;
+    color: var(--text);
+    background-color: var(--light-bg);
+}
+
+/* ─── PAGE HEADING ─── */
+.page-heading {
+    text-align: center;
+    padding: 48px 20px 24px;
+    margin-bottom: 24px;
+}
+
+.page-heading h2 {
+    font-size: 44px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.page-heading p {
+    font-size: 19px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+/* Removed marquee styles */
+
+/* ─── BLOG CARDS ─── */
+.blog-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.05);
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.1);
+    border-color: rgba(226, 232, 240, 0);
+}
+
+.blog-card-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16/10;
+    background: #e2e8f0;
+    border-bottom: 1px solid var(--border);
+}
+
+.blog-card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.blog-card:hover .blog-card-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* Date inside red box at top right of image, like screenshot 2 */
+.blog-date-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--navy);
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.2);
+}
+
+.blog-card-body {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--navy-dark);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.blog-card:hover .blog-card-title {
+    color: var(--accent);
+}
+
+.blog-card-meta {
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.blog-card-meta .meta-date {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.blog-card-meta .meta-author {
+    color: var(--navy-dark);
+    font-weight: 800;
+}
+
+.blog-card-text {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ─── BUTTONS ─── */
+.blog-card-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.btn-read-more {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    min-width: 140px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: var(--accent-hover);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(245, 166, 35, 0.3);
+}
+
+/* ─── SIDEBAR ─── */
+.sidebar-wrapper {
+    position: sticky;
+    top: 30px;
+}
+
+.sidebar-widget {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(15, 23, 42, 0.02);
+}
+
+.widget-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* ─── SIDEBAR SMALL NEWS LIST ─── */
+.small-news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.small-news-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.small-news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.small-news-item:hover {
+    transform: translateX(4px);
+}
+
+.small-news-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: #e2e8f0;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.small-news-content h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.small-news-content h4 a {
+    color: var(--navy-dark);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.small-news-content h4 a:hover {
+    color: var(--danger);
+}
+
+/* ─── SIDEBAR GENERAL LINKS ─── */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    margin-bottom: 12px;
+}
+
+.sidebar-links li:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-links li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.sidebar-links li a i {
+    color: var(--accent);
+    margin-right: 12px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.sidebar-links li a:hover {
+    color: var(--danger);
+    padding-left: 6px;
+}
+
+/* ─── SIDEBAR SOCIAL BUTTONS ─── */
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--light-bg);
+    color: var(--navy-dark);
+    border: 1px solid var(--border);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(26, 58, 92, 0.2);
+}
+
+/* ─── PAGINATION ─── */
+.gp-pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gp-pagination {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--navy-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.gp-page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: white;
+    border-right: 1px solid var(--navy-dark);
+    color: var(--navy-dark);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.gp-page-link:last-child {
+    border-right: none;
+}
+
+.gp-page-link:hover {
+    background: var(--light-bg);
+    color: var(--navy);
+}
+
+.gp-page-link.gp-page-active {
+    background: var(--navy);
+    color: white;
+}
+
+/* ─── CONTACT ─── */
+.gp-contact {
+    font-style: normal;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.gp-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gp-contact-item i {
+    color: var(--accent);
+    width: 20px;
+    margin-right: 10px;
+}
+
+.gp-contact-item a {
+    color: var(--navy-dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.gp-contact-item a:hover {
+    color: var(--danger);
+}
+
+/* ─── MINI FOOTER ─── */
+.gp-mini-footer {
+    background: var(--navy-dark);
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+.gp-mini-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
