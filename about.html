@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ग्रामपंचायतीबद्दल – जातेगाव</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+    <div class="page-heading">
+        <h2>ग्रामपंचायतीबद्दल</h2>
+        <p>आम्ही आपल्या गावाचा शाश्वत व समृद्ध विकास करण्यासाठी कटिबद्ध आहोत.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="container-page">
+        <div class="tab-pills" role="tablist">
+            <button class="tab-pill active" data-tab="all">सर्व दाखवा</button>
+            <button class="tab-pill" data-tab="tab-info">सर्व माहिती</button>
+            <button class="tab-pill" data-tab="tab-bearers">पदाधिकारी</button>
+            <button class="tab-pill" data-tab="tab-staff">कर्मचारी</button>
+            <button class="tab-pill" data-tab="tab-committees">ग्रामपंचायत समित्या</button>
+            <button class="tab-pill" data-tab="tab-infra">ग्राम पायाभूत सुविधा</button>
+        </div>
+
+        <!-- ══ TAB 1: सर्व माहिती ══ -->
+        <div id="tab-info" class="tab-section active">
+            <div class="gp-info-card">
+                <div class="card-section-title">ग्रामपंचायत माहिती</div>
+                <div class="info-cols">
+                    <!-- Left col -->
+                    <div class="info-col">
+                        <h6>प्राथमिक माहिती</h6>
+                        <ul class="info-list">
+                            <li>ग्रामपंचायतीचे नाव : जातेगाव</li>
+                            <li>अंतर्गत गावाची नावे : जातेगाव</li>
+                            <li>तालुका : फुलंब्री</li>
+                            <li>जिल्हा : छत्रपती संभाजीनगर</li>
+                            <li>ग्रामपंचायत स्थापना दिनांक : 05-06-1973</li>
+                            <li>एकूण प्रभाग संख्या : 10</li>
+                            <li>प्रथम सभा दिनांक : 08-02-2021</li>
+                            <li>एकूण क्षेत्रफळ : 10.4</li>
+                        </ul>
+                    </div>
+                    <!-- Right col -->
+                    <div class="info-col">
+                        <h6>लोकसंख्या माहिती</h6>
+                        <ul class="info-list">
+                            <li>एकूण लोकसंख्या : 2468</li>
+                            <li>एकूण कुटुंबे : 502</li>
+                            <li>पुरुष : 1268</li>
+                            <li>महिला : 1268</li>
+                            <li>साक्षरता दर : 70</li>
+                            <li>पिन कोड : 4311111</li>
+                            <li>LGD कोड : 170747</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision + Values -->
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vc-title">
+                        <span style="font-size:20px;">⊙</span> दृष्टिकोन व ध्येय
+                    </div>
+                    <ul>
+                        <li>गावातील सर्व नागरिकांना उच्च दर्जाच्या भौतिक व प्रशासकीय सेवा प्रदान करणे</li>
+                        <li>गावाचा शाश्वत विकास घडवून निसर्गसंपन्न, समृद्ध परिसर निर्माण करणे</li>
+                        <li>समाजाच्या प्रत्येक घटकांपर्यंत शासनाच्या योजना पोहचवून भेदभावमुक्त, सशक्त, सुरक्षित गाव
+                            निर्माण करणे</li>
+                    </ul>
+                </div>
+                <div class="vision-card">
+                    <div class="vc-title">
+                        <span style="font-size:20px;">☆</span> मूलभूत मूल्ये
+                    </div>
+                    <ul>
+                        <li>सर्व नागरिकांना समान हक्क या न्यायाने सेवा प्रदान करणे</li>
+                        <li>समाजातील सर्व घटकांचें कल्याण साधने</li>
+                        <li>पर्यावरण संवर्धन व संरक्षण</li>
+                        <li>सर्वधर्मसमभाव, महिलास्नेही, बालस्नेही ग्राम निर्मिती</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB 2: पदाधिकारी ══ -->
+        <div id="tab-bearers" class="tab-section">
+            <div class="tab-section-heading">निवडून आलेले पदाधिकारी</div>
+            <div class="person-grid">
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image1.jpeg" alt="सौ. सरला रावसाहेब दानवे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ.सरला रावसाहेब दानवे</div>
+                    <div class="pc-role">सरपंच</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 2</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9898985556">9898985556</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 10-10-2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image2.jpeg" alt="सौ. पुष्पा ज्ञानेश्वर फुले"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ. पुष्पा ज्ञानेश्वर फुले</div>
+                    <div class="pc-role">उपसरपंच</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 1</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9999999999">9999999999</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 24-08-2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image3.jpeg" alt="श्री. नितीन विठ्ठलराव लाखोले"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. नितीन विठ्ठलराव लाखोले</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 2</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9561726195">9561726195</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image4.jpeg" alt="श्री. जनार्दन सोमीनाथ मानकापे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. जनार्दन सोमीनाथ मानकापे</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड ক্র.: 2</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9822386151">9822386151</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image5.jpeg" alt="सौ. विमलबाई पांडूरंग मानकापे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ. विमलबाई पांडूरंग मानकापे</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 2</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9421401265">9421401265</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image6.jpg" alt="सौ. पुष्पा किशोर मानकापे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ. पुष्पा किशोर मानकापे</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 1</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9860232331">9860232331</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image7.jpg" alt="श्री. नाना उत्तमराव मानकापे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. नाना उत्तमराव मानकापे</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 1</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9403691445">9403691445</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image8.jpg" alt="श्री. रंगनाथ भाऊराव शेजवळ"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. रंगनाथ भाऊराव शेजवळ</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 2</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9730764406">9730764406</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image9.jpg" alt="सौ. कांताबाई शेषराव दानवे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ. कांताबाई शेषराव दानवे</div>
+                    <div class="pc-role">सदस्य</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item">वार्ड क्र.: 3</div>
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9552356301">9552356301</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> निवड: 08-02-2021
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ TAB 3: कर्मचारी ══ -->
+        <div id="tab-staff" class="tab-section">
+            <div class="tab-section-heading">कर्मचारी माहिती</div>
+            <div class="person-grid">
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image10.jpeg" alt="श्री. राजेश खाकरे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. राजेश खाकरे</div>
+                    <div class="pc-role">ग्रामपंचायत अधिकारी</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:7875438494">7875438494</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            21-09-2023</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image11.jpeg" alt="श्री. विठ्ठल बाळा दानवे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. विठ्ठल बाळा दानवे</div>
+                    <div class="pc-role">पाणीपुरवठा कर्मचारी</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:7218568874">7218568874</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            12-07-2000</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image12.jpeg" alt="श्री. विकास रंगनाथ दानवे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. विकास रंगनाथ दानवे</div>
+                    <div class="pc-role">ग्रामपंचायत शिपाई</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:7028138571">7028138571</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            10-08-2024</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image13.jpg" alt="खलील करीम शेख"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">खलील करीम शेख</div>
+                    <div class="pc-role">संगणक परिचालक</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:8888134429">8888134429</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            14-10-2018</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image14.jpg" alt="श्री. नारायण हरिश्चंद्र फुले"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्री. नारायण हरिश्चंद्र फुले</div>
+                    <div class="pc-role">ग्रामरोजगार सहाय्यक</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-solid fa-phone pc-icon"></i> <a
+                                href="tel:9503577041">9503577041</a></div>
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            12-12-2018</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image15.jpg" alt="सौ. कस्तुराबाई सूर्यभान मानकापे"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">सौ. कस्तुराबाई सूर्यभान मानकापे</div>
+                    <div class="pc-role">अंगणवाडी कार्यकर्ती (१)</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            26-12-2020</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image16.jpg" alt="श्रीमती अनिता आसाराम तळेकर"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्रीमती अनिता आसाराम तळेकर</div>
+                    <div class="pc-role">अंगणवाडी कार्यकर्ती (४)</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            26-12-2020</div>
+                    </div>
+                </div>
+
+                <div class="person-card">
+                    <div class="pc-photo">
+                        <img src="images/image17.jpg" alt="श्रीमती विमल रघुनाथ कोलते"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="ph-icon" style="display:none;">👤</span>
+                    </div>
+                    <div class="pc-name">श्रीमती विमल रघुनाथ कोलते</div>
+                    <div class="pc-role">अंगणवाडी कार्यकर्ती (३)</div>
+                    <div class="pc-meta">
+                        <div class="pc-meta-item"><i class="fa-regular fa-calendar-check pc-icon"></i> नियुक्ती:
+                            26-12-2020</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ TAB 4: समित्या ══ -->
+        <div id="tab-committees" class="tab-section">
+            <div class="tab-section-heading">ग्रामपंचायत समित्या</div>
+
+            <!-- Committee 1 -->
+            <div class="committee-card">
+                <div class="cc-header open" onclick="toggleCommittee(this)">
+                    <span>1) मुख्यमंत्री समृध्द पंचायत राज अभियान समिती</span>
+                    <i class="fa fa-chevron-up cc-toggle"></i>
+                </div>
+                <div class="cc-body open">
+                    <div class="table-responsive">
+                        <table class="table mb-0" style="font-size:13px;">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px;">अ.</th>
+                                    <th>नाव</th>
+                                    <th>पदनाम</th>
+                                    <th>समितीतील पद</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>सौ. सरला रावसाहेब दानवे</td>
+                                    <td>सरपंच</td>
+                                    <td>अध्यक्ष</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>सौ.पुष्पा ज्ञानेश्वर फुले</td>
+                                    <td>उपसरपंच</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>सौ. पुष्पा किशोर मानकापे</td>
+                                    <td>ग्रामपंचायत सदस्य</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>श्री. नाना उत्तमराव मानकापे</td>
+                                    <td>ग्रामपंचायत सदस्य</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>श्री. ज्ञानेश्वर बोबडे</td>
+                                    <td>पोलीस पाटील</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>श्रीमती अनिता सुखदेव मानकापे</td>
+                                    <td>अंगणवाडी कार्यकर्ती</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>श्री. राजेश खाकरे</td>
+                                    <td>ग्रामपंचायत अधिकारी</td>
+                                    <td>सदस्य- सचिव</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>रंगनाथ भावराव शेजवळ</td>
+                                    <td>ग्रामपंचायत सदस्य</td>
+                                    <td>सदस्य</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee 2 -->
+            <div class="committee-card">
+                <div class="cc-header" onclick="toggleCommittee(this)">
+                    <span>2) आदिशक्ती अभियान समिती</span>
+                    <i class="fa fa-chevron-down cc-toggle"></i>
+                </div>
+                <div class="cc-body">
+                    <div class="table-responsive">
+                        <table class="table mb-0" style="font-size:13px;">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px;">अ.</th>
+                                    <th>नाव</th>
+                                    <th>पदनाम</th>
+                                    <th>समितीतील पद</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>सौ. सरला रावसाहेब दानवे</td>
+                                    <td>सरपंच</td>
+                                    <td>अध्यक्ष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee 3 -->
+            <div class="committee-card">
+                <div class="cc-header" onclick="toggleCommittee(this)">
+                    <span>3) ग्राम आरोग्य पोषण पाणीपुरवठा व स्वच्छता समिती</span>
+                    <i class="fa fa-chevron-down cc-toggle"></i>
+                </div>
+                <div class="cc-body">
+                    <div class="table-responsive">
+                        <table class="table mb-0" style="font-size:13px;">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px;">अ.</th>
+                                    <th>नाव</th>
+                                    <th>पदनाम</th>
+                                    <th>समितीतील पद</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>सौ. सरला रावसाहेब दानवे</td>
+                                    <td>सरपंच</td>
+                                    <td>अध्यक्ष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee 4 -->
+            <div class="committee-card">
+                <div class="cc-header" onclick="toggleCommittee(this)">
+                    <span>4) ग्राम बाल संरक्षण समिती</span>
+                    <i class="fa fa-chevron-down cc-toggle"></i>
+                </div>
+                <div class="cc-body">
+                    <div class="table-responsive">
+                        <table class="table mb-0" style="font-size:13px;">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px;">अ.</th>
+                                    <th>नाव</th>
+                                    <th>पदनाम</th>
+                                    <th>समितीतील पद</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>सौ. सरला रावसाहेब दानवे</td>
+                                    <td>सरपंच</td>
+                                    <td>अध्यक्ष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee 5 -->
+            <div class="committee-card">
+                <div class="cc-header" onclick="toggleCommittee(this)">
+                    <span>5) जैविक विविधता व्यवस्थापन समिती</span>
+                    <i class="fa fa-chevron-down cc-toggle"></i>
+                </div>
+                <div class="cc-body">
+                    <div class="table-responsive">
+                        <table class="table mb-0" style="font-size:13px;">
+                            <thead>
+                                <tr>
+                                    <th style="width:50px;">अ.</th>
+                                    <th>नाव</th>
+                                    <th>पदनाम</th>
+                                    <th>समितीतील पद</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>सौ. सरला रावसाहेब दानवे</td>
+                                    <td>सरपंच</td>
+                                    <td>अध्यक्ष</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Committee 6 – no data -->
+            <div class="committee-card">
+                <div class="cc-header" onclick="toggleCommittee(this)">
+                    <span>6) महात्मा गांधी तंटामुक्त गाव समिती</span>
+                    <i class="fa fa-chevron-down cc-toggle"></i>
+                </div>
+                <div class="cc-body">
+                    <div class="no-info">या समितीची कोणतीही माहिती उपलब्ध नाही.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ══ TAB 5: पायाभूत सुविधा ══ -->
+        <div id="tab-infra" class="tab-section">
+            <div class="tab-section-heading">ग्राम पायाभूत सुविधा</div>
+            <div class="infra-grid">
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-water"></i> सार्वजनिक पाणीपुरवठा विहीर संख्या</span><span
+                        class="infra-val">2</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-faucet-drip"></i> सार्वजनिक बोअरवेल हातपंप संख्या</span><span
+                        class="infra-val">1</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-glass-water-droplet"></i> पाण्याच्या टाक्यांची संख्या</span><span
+                        class="infra-val">2</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-restroom"></i> सार्वजनिक शौचालय संख्या</span><span
+                        class="infra-val">2</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-trash-can"></i> सार्वजनिक कचराकुड्या संख्या</span><span
+                        class="infra-val">2</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-recycle"></i> घनकचरा व्यवस्थापन प्रकल्प संख्या</span><span
+                        class="infra-val">1</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-lightbulb"></i> रस्त्यावरील पथदिवे संख्या</span><span
+                        class="infra-val">40</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-school"></i> प्राथमिक शाळांची संख्या</span><span
+                        class="infra-val">2</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-school-flag"></i> माध्यमिक शाळांची संख्या</span><span
+                        class="infra-val">1</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-building-columns"></i> उच्च माध्यमिक शाळांची संख्या</span><span
+                        class="infra-val">1</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-child-reaching"></i> अंगणवाडी संख्या</span><span class="infra-val">5</span>
+                </div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-city"></i> सार्वजनिक इमारतींची संख्या</span><span
+                        class="infra-val">3</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-map-location-dot"></i> जिल्हा मुख्यालय पासून ग्रामपंचायतीचे अंतर
+                        (कि.मी)</span><span class="infra-val">45</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-route"></i> तालुका मुख्यालय पासून अंतर (कि.मी)</span><span
+                        class="infra-val">12</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-bus"></i> गावात बस येते का?</span><span
+                        class="infra-val">होय</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-building-columns"></i> गावात बँक आहे का?</span><span
+                        class="infra-val">होय</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-hospital"></i> प्राथमिक आरोग्य केंद्र/उपकेंद्र आहे का?</span><span
+                        class="infra-val">होय</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-house-chimney-window"></i> पर्यटकांसाठी होम स्टे उपलब्ध आहे का?</span><span
+                        class="infra-val">होय</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-utensils"></i> पर्यटकांसाठी हॉटेल जेवण व निवास व्यवस्था?</span><span
+                        class="infra-val">नाही</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-book-open-reader"></i> वाचनालय आहे का?</span><span
+                        class="infra-val">होय</span></div>
+                <div class="infra-item"><span class="infra-label"><i class="fa-solid fa-volleyball"></i> खेळाचे मैदान आहे का?</span><span
+                        class="infra-val">नाही</span></div>
+            </div>
+        </div>
+
+    </div><!-- /container-page -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tab switching logic
+        document.querySelectorAll('.tab-pill').forEach(btn => {
+            btn.addEventListener('click', function () {
+                // Update active tab pill
+                document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetTab = this.dataset.tab;
+
+                if (targetTab === 'all') {
+                    // Show all sections
+                    document.querySelectorAll('.tab-section').forEach(s => {
+                        s.classList.add('active');
+                        s.style.display = 'block';
+                    });
+                } else {
+                    // Hide all, show only the target section
+                    document.querySelectorAll('.tab-section').forEach(s => {
+                        s.classList.remove('active');
+                        s.style.display = 'none';
+                    });
+                    const targetEl = document.getElementById(targetTab);
+                    if (targetEl) {
+                        targetEl.classList.add('active');
+                        targetEl.style.display = 'block';
+                    }
+                }
+
+                // Scroll to top of content area to give clean view of the selection
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Committee accordion toggle
+        function toggleCommittee(header) {
+            const body = header.nextElementSibling;
+            const isOpen = header.classList.contains('open');
+            header.classList.toggle('open', !isOpen);
+            body.classList.toggle('open', !isOpen);
+            const icon = header.querySelector('.cc-toggle');
+            icon.className = isOpen ? 'fa fa-chevron-down cc-toggle' : 'fa fa-chevron-up cc-toggle';
+        }
+    </script>
+</body>
+
+</html>
