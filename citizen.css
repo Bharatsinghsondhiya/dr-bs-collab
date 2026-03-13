@@ -1,0 +1,400 @@
+/* ─── Citizen Services Page Styles ─── */
+/* Works alongside Bootstrap 5.3 */
+
+:root {
+    --navy: #1a3a5c;
+    --navy-dark: #0f172a;
+    --accent: #f5a623;
+    --accent-dark: #d97706;
+    --light-bg: #f8fafc;
+    --border: #e2e8f0;
+    --text: #334155;
+    --muted: #64748b;
+    --card-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mukta', 'Tiro Devanagari Marathi', sans-serif;
+    background: #f1f5f9;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ─── PAGE HEADING ─── */
+.page-heading {
+    text-align: center;
+    padding: 42px 20px 24px;
+    margin-bottom: 24px;
+}
+
+.page-heading h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.page-heading p {
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+/* ─── PILL TABS ─── */
+.tab-pills {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 16px 4px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.tab-pills::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .tab-pills {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.tab-pill {
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 2px solid #eef2f6;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-dark);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Mukta', sans-serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.tab-pill:hover {
+    border-color: var(--navy-dark);
+    color: var(--navy-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.tab-pill.active {
+    background: var(--navy-dark);
+    color: #fff;
+    border-color: var(--navy-dark);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.3);
+}
+
+/* ─── TAB SECTIONS ─── */
+.tab-section {
+    display: none;
+    margin-bottom: 48px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--navy-dark);
+    border-radius: 4px;
+}
+
+/* ─── SERVICES CARDS (TAB 2) ─── */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: var(--card-radius);
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.service-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 12px;
+}
+
+.service-card > p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.service-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.service-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.scrollable-list {
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 8px; /* space for scrollbar */
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Custom Scrollbar for inner lists */
+.scrollable-list::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollable-list::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+.scrollable-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.service-card ul li {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.service-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.meta-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy-dark);
+}
+
+.meta-item i {
+    color: var(--accent);
+    margin-right: 6px;
+}
+
+/* ─── APPLICATION PROCESS (TAB 3) ─── */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.process-step {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: var(--card-radius);
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    position: relative;
+    z-index: 1;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background: var(--navy-dark);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+}
+
+.process-step h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy-dark);
+    margin-bottom: 12px;
+}
+
+.process-step p {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* ─── DOWNLOADS (TAB 4) ─── */
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.download-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: var(--card-radius);
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
+}
+
+.download-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.download-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy-dark);
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
+}
+
+.download-btn:hover {
+    background: var(--accent-dark);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ─── QR CODES (TAB 5) ─── */
+.qr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .qr-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.qr-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: var(--card-radius);
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+
+.qr-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.qr-card h4 span {
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.qr-wrapper {
+    background: #f8fafc;
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0 auto 24px;
+    display: inline-block;
+}
+
+.qr-wrapper img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.qr-card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

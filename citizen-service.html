@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>उपलब्ध लोकसेवा – जातेगाव</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="citizen.css" />
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+    <div class="page-heading">
+        <h2>उपलब्ध लोकसेवा</h2>
+        <p>सेवा हक्क अधिनियम अंतर्गत ग्रामपंचायतीकडून देण्यात येणाऱ्या सेवांची माहिती व अर्ज प्रक्रिया</p>
+    </div>
+
+    <div class="container-page">
+        <!-- TABS NAVIGATION -->
+        <div class="tab-pills" role="tablist">
+            <button class="tab-pill active" data-tab="all">सर्व पहा</button>
+            <button class="tab-pill" data-tab="tab-services">उपलब्ध लोकसेवा</button>
+            <button class="tab-pill" data-tab="tab-process">अर्ज प्रक्रिया</button>
+            <button class="tab-pill" data-tab="tab-downloads">अर्ज नमुना डाउनलोड करा</button>
+            <button class="tab-pill" data-tab="tab-qr">कर भरणा QR Code</button>
+        </div>
+
+        <!-- ══ TAB 2: उपलब्ध लोकसेवा ══ -->
+        <div id="tab-services" class="tab-section active">
+            <div class="section-title">उपलब्ध लोकसेवा</div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <h4>जन्म नोंदणी व प्रमाणपत्र</h4>
+                    <p>गावाच्या हद्दीत जन्म झाला असल्यास २१ दिवसांच्या आत जन्म नोंदणी केली जाते व प्रमाणपत्र दिले जाते.
+                    </p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul>
+                        <li>अर्ज</li>
+                        <li>आई-वडील यांचे आधारकार्ड</li>
+                        <li>आशा/अंगणवाडी कार्यकर्ती यांचा अहवाल</li>
+                        <li>आवश्यकतेनुसार रुग्णालय कागदपत्रे</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>जन्म गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते. प्राथमिक आरोग्य केंद्र
+                            येथे झालेल्या जन्माची नोंदणी त्याच ठिकाणी केली जाते.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-indian-rupee-sign"></i> पहिले मोफत, नंतर 20
+                            रुपये</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> 7 दिवस</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <h4>मृत्यू नोंदणी व प्रमाणपत्र</h4>
+                    <p>गावाच्या हद्दीत मृत्यू झाला असल्यास २१ दिवसांच्या आत मृत्यू नोंदणी केली जाते व प्रमाणपत्र दिले
+                        जाते.</p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul>
+                        <li>अर्ज</li>
+                        <li>मयत व्यक्तीचे आधारकार्ड</li>
+                        <li>आवश्यकतेनुसार रुग्णालय/पोलीस स्टेशन कागदपत्रे</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>मृत्यू गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-indian-rupee-sign"></i> पहिले मोफत, नंतर 20
+                            रुपये</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> 7 दिवस</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <h4>विवाह नोंदणी व प्रमाणपत्र</h4>
+                    <p>विवाह नोंदणी अधिनियम 1998 नुसार विवाह नोंदणी केली जाते.</p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul class="scrollable-list">
+                        <li>विवाहाचे ज्ञापन</li>
+                        <li>वर-वधूचे जन्म प्रमाणपत्र</li>
+                        <li>शाळा सोडल्याचा दाखला</li>
+                        <li>आधार/मतदार कार्ड/ड्रायविंग लायसन्स</li>
+                        <li>रेशन कार्ड/वीजबिल/पासपोर्ट</li>
+                        <li>लग्नपत्रिका</li>
+                        <li>शपथपत्र</li>
+                        <li>लग्नाचे फोटोग्राफ्स</li>
+                        <li>पासपोर्ट फोटो (2)</li>
+                        <li>तीन साक्षीदार फोटो (2)</li>
+                        <li>घटस्फोट आदेश प्रत</li>
+                        <li>पूर्वीच्या जोडीदाराचे मृत्यू प्रमाणपत्र</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>प्राप्त अर्ज व कागदपत्रे यांची छाननी केली जाते. खात्री झाल्यावर विवाह नोंदणी केली जाते.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-indian-rupee-sign"></i> विवाह नोंदणी ५० ते २००
+                            रुपये, प्रमाणपत्र २० रुपये</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> —</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <h4>दारिद्र्य रेषेखालील दाखला</h4>
+                    <p>दारिद्र्य रेषेखालील असलेल्या यादीत नाव असल्यास दाखला दिला जातो.</p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul>
+                        <li>अर्ज</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>यादीत नाव तपासून दाखला दिला जातो.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-indian-rupee-sign"></i> 20 रुपये</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> 7 दिवस</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <h4>नमुना नं 8 चा उतारा</h4>
+                    <p>नमुना नंबर 8 मधील स्वमालकीच्या मालमत्तेचा उतारा दिला जातो.</p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul>
+                        <li>अर्ज</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>नमुना नं 8 रजिस्टरवरून नाव तपासून उतारा दिला जातो.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-indian-rupee-sign"></i> 20 रुपये</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> 5 दिवस</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <h4>निराधार असल्याचा दाखला</h4>
+                    <p>कुटुंब प्रमुखाच्या मृत्यूनंतर कुटुंब प्रमुख नसल्याचा दाखला दिला जातो.</p>
+                    <h5>आवश्यक कागदपत्रे:</h5>
+                    <ul>
+                        <li>अर्ज</li>
+                        <li>कुटुंब प्रमुख मृत्यू प्रमाणपत्र</li>
+                    </ul>
+                    <h5>प्रक्रिया:</h5>
+                    <ul>
+                        <li>चौकशी व खात्री करून प्रमाणपत्र दिले जाते.</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span class="meta-item"><i class="fa-solid fa-check"></i> निःशुल्क</span>
+                        <span class="meta-item"><i class="fa-solid fa-clock"></i> 20 दिवस</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB 3: अर्ज प्रक्रिया ══ -->
+        <div id="tab-process" class="tab-section active">
+            <div class="section-title">अर्ज प्रक्रिया</div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>अर्ज सादर करा</h4>
+                    <p>विहीत नमुन्यात ग्रामपंचायत कार्यालयात अर्ज सादर करा.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>अर्ज व कागदपत्रे पडताळणी</h4>
+                    <p>ग्रामपंचायत कार्यालयात प्राप्त अर्ज व कागदपत्रे यांची पडताळणी होईल.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>प्रमाणपत्र वितरण</h4>
+                    <p>पात्र अर्जदारास विहीत कालमर्यादेत प्रमाणपत्र दिले जाईल.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB 4: अर्ज नमुना डाउनलोड ══ -->
+        <div id="tab-downloads" class="tab-section active">
+            <div class="section-title">अर्ज नमुना डाउनलोड करा</div>
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <h4>जन्म मृत्यु अनुपलब्धता अर्ज</h4>
+                    <a href="https://jategaon.gpweb.in/Admin-Login/uploads/arj_namuna/default_1.pdf"
+                        class="download-btn" download><i class="fa-solid fa-download"></i> Download</a>
+                </div>
+                <div class="download-card">
+                    <h4>लोकसेवा अर्ज</h4>
+                    <a href="https://jategaon.gpweb.in/Admin-Login/uploads/arj_namuna/default_2.pdf"
+                        class="download-btn" download><i class="fa-solid fa-download"></i> Download</a>
+                </div>
+                <div class="download-card">
+                    <h4>विवाहनोंदणी अर्ज</h4>
+                    <a href="https://jategaon.gpweb.in/Admin-Login/uploads/arj_namuna/default_3.pdf"
+                        class="download-btn" download><i class="fa-solid fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB 5: कर भरणा QR ══ -->
+        <div id="tab-qr" class="tab-section active">
+            <div class="section-title">कर भरणा QR Code</div>
+            <div class="qr-grid">
+                <div class="qr-card">
+                    <h4><span>1.</span> ग्रामनिधी</h4>
+                    <div class="qr-wrapper">
+                        <img src="images/gramnidhi.png" alt="ग्रामनिधी QR Code">
+                    </div>
+                    <p>सूचना: या QR Code चा वापर करून कर भरणा केल्यास पेमेंट केल्याचा screenshot, मिळकत धारकाचे नाव,
+                        मालमत्ता क्रमांक ही माहिती पावतीसाठी ग्रामपंचायतीला त्याच दिवशी कळवावी.</p>
+                </div>
+                <div class="qr-card">
+                    <h4><span>2.</span> पाणीनिधी</h4>
+                    <div class="qr-wrapper">
+                        <img src="images/pani.jpg" alt="पाणीनिधी QR Code">
+                    </div>
+                    <p>सूचना: या QR Code चा वापर करून कर भरणा केल्यास पेमेंट केल्याचा screenshot, मिळकत धारकाचे नाव,
+                        मालमत्ता क्रमांक ही माहिती पावतीसाठी ग्रामपंचायतीला त्याच दिवशी कळवावी.</p>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /container-page -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tab switching logic
+        document.querySelectorAll('.tab-pill').forEach(btn => {
+            btn.addEventListener('click', function () {
+                // Update active tab pill
+                document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetTab = this.dataset.tab;
+
+                if (targetTab === 'all') {
+                    // Show all sections
+                    document.querySelectorAll('.tab-section').forEach(sec => {
+                        sec.classList.add('active');
+                    });
+                } else {
+                    // Hide all, show target
+                    document.querySelectorAll('.tab-section').forEach(sec => {
+                        sec.classList.remove('active');
+                    });
+                    document.getElementById(targetTab).classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
