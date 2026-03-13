@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>विकास कामे व प्रकल्प – जातेगाव</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+    <div class="page-heading">
+        <h2>विकास कामे व प्रकल्प</h2>
+        <p>ग्रामपंचायतीमार्फत केल्या जाणाऱ्या विकास कामे व प्रकल्पांची माहिती.</p>
+    </div>
+
+    <div class="container-page">
+        <!-- TABS NAVIGATION -->
+        <div class="tab-pills" role="tablist">
+            <button class="tab-pill active" data-tab="all">सर्व माहिती</button>
+            <button class="tab-pill" data-tab="tab-ongoing">सुरू असलेले प्रकल्प</button>
+            <button class="tab-pill" data-tab="tab-completed">पूर्ण झालेले प्रकल्प</button>
+            <button class="tab-pill" data-tab="tab-upcoming">आगामी प्रकल्प</button>
+        </div>
+
+        <!-- ══ TAB: सुरू असलेले प्रकल्प (Ongoing) ══ -->
+        <div id="tab-ongoing" class="tab-section active">
+            <div class="section-title">सुरू असलेले प्रकल्प</div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Project 1 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-ongoing">सुरू आहे</span>
+                            <img src="images/public-toilet.jpg" alt="सार्वजनिक शौचालय बांधकाम" class="image-zoom-cursor"
+                                onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=सार्वजनिक+शौचालय'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">सार्वजनिक शौचालय बांधकाम</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> 15 वित्त आयोग</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> गराडा वस्ती, जातेगाव</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-ongoing">सुरू आहे</span>
+                            <img src="images/soak-pit.jpg" alt="शोषखड्डे" class="image-zoom-cursor"
+                                onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=शोषखड्डे'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">शोषखड्डे</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> स्वच्छ भारत मिशन</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> जातेगाव</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB: पूर्ण झालेले प्रकल्प (Completed) ══ -->
+        <div id="tab-completed" class="tab-section active">
+            <div class="section-title">पूर्ण झालेले प्रकल्प</div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Project 1 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-completed">पूर्ण</span>
+                            <img src="images/solid-waste.jpg" alt="घनकचरा व्यवस्थापन प्रकल्प" class="image-zoom-cursor"
+                                onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=घनकचरा+व्यवस्थापन'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">घनकचरा व्यवस्थापन प्रकल्प</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> स्वच्छ भारत मिशन- 15 वा वित्त आयोग</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2024</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> जातेगाव</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-completed">पूर्ण</span>
+                            <img src="images/tree-plantation.jpg" alt="वृक्षलागवड" class="image-zoom-cursor"
+                                onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=वृक्षलागवड'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">वृक्षलागवड</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> ग्रामनिधी</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> मुख्य रस्ता</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-completed">पूर्ण</span>
+                            <img src="images/soak-pit-construction.jpg" alt="शोषखड्डे बांधकाम" class="image-zoom-cursor"
+                                onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=शोषखड्डे+बांधकाम'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">शोषखड्डे बांधकाम</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> 15 वा वित्त आयोग</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> जातेगाव</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <span class="project-status status-completed">पूर्ण</span>
+                            <img src="images/rainwater-harvesting.jpg" alt="रेनवॉटर हार्वेस्टिंग"
+                                class="image-zoom-cursor" onclick="openLightbox(this.src)"
+                                onerror="this.src='https://placehold.co/600x400/e2e8f0/64748b?text=रेनवॉटर+हार्वेस्टिंग'" />
+                        </div>
+                        <div class="project-body">
+                            <h4 class="project-title">रेनवॉटर हार्वेस्टिंग</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> 15 वा वित्त आयोग</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div><span class="label">ठिकाणः</span> तलाठी भवन</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div><span class="label">अधिक माहिती:</span> -</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ TAB: आगामी प्रकल्प (Upcoming) ══ -->
+        <div id="tab-upcoming" class="tab-section active">
+            <div class="section-title">आगामी प्रकल्प</div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Project 1 -->
+                <div class="col">
+                    <div class="project-card" style="border-top: 4px solid var(--status-upcoming);">
+                        <div class="project-body">
+                            <div class="mb-3">
+                                <span class="project-status status-upcoming" style="position: static; display: inline-block; box-shadow: none;">आगामी</span>
+                            </div>
+                            <h4 class="project-title">सिमेंटरस्ता- शिकलकर वस्ती</h4>
+                            <ul class="project-details">
+                                <li>
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <div><span class="label">योजना:</span> 15 वा वित्त आयोग</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <div><span class="label">वर्षः</span> 2025</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    <div><span class="label">अंदाजपत्रकीय रक्कम:</span> 3 लक्ष</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /container-page -->
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 d-flex justify-content-end p-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 modal-image-wrapper">
+                    <img src="" id="modalImage" alt="Full Project View" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Lightbox Logic
+        function openLightbox(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        }
+
+        // Tab switching logic
+        document.querySelectorAll('.tab-pill').forEach(btn => {
+            btn.addEventListener('click', function () {
+                // Update active tab pill
+                document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const targetTab = this.dataset.tab;
+
+                if (targetTab === 'all') {
+                    // Show all sections
+                    document.querySelectorAll('.tab-section').forEach(sec => {
+                        sec.classList.add('active');
+                    });
+                } else {
+                    // Hide all, show target
+                    document.querySelectorAll('.tab-section').forEach(sec => {
+                        sec.classList.remove('active');
+                    });
+                    document.getElementById(targetTab).classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
