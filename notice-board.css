@@ -1,0 +1,198 @@
+/* ─── Notice Board Page Styles ─── */
+/* Works alongside Bootstrap 5.3 */
+
+:root {
+    --navy: #1a3a5c;
+    --navy-dark: #0f172a;
+    --accent: #f5a623;
+    --accent-hover: #e0961b;
+    --tab-inactive: #dae3d5; /* Soft sage green from the mockup */
+    --light-bg: #f8fafc;
+    --border: #e2e8f0;
+    --text: #334155;
+    --muted: #64748b;
+    --card-radius: 10px;
+    --danger: #dc3545;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mukta', 'Tiro Devanagari Marathi', sans-serif;
+    background: #ffffff;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ─── RECTANGULAR TABS (MOCKUP STYLE) ─── */
+.notice-tabs-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.notice-tab {
+    padding: 12px 24px;
+    background-color: var(--tab-inactive);
+    color: var(--navy-dark);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.notice-tab:hover {
+    background-color: #cdd8c7;
+}
+
+.notice-tab.active {
+    background-color: var(--navy-dark);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+}
+
+/* ─── TAB CONTENT PANELS ─── */
+.notice-panel {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.notice-panel.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── PANEL HEADER ─── */
+.panel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.panel-header i {
+    font-size: 24px;
+    color: var(--navy-dark);
+    margin-right: 12px;
+}
+
+.panel-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin: 0;
+}
+
+/* ─── CSS MASONRY GRID ─── */
+.notice-masonry-grid {
+    column-count: 2;
+    column-gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .notice-masonry-grid {
+        column-count: 1;
+    }
+}
+
+/* ─── NOTICE CARDS ─── */
+.notice-card {
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: var(--card-radius);
+    padding: 30px 24px;
+    margin-bottom: 24px;
+    break-inside: avoid; /* Prevents card from splitting across columns in masonry */
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+    text-align: center; /* Centered content as per mockup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+    border-color: rgba(226, 232, 240, 1);
+}
+
+.notice-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-dark);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.notice-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.notice-meta i {
+    margin-right: 8px;
+    font-size: 15px;
+}
+
+/* ─── BUTTONS & STATUS ─── */
+.notice-status-danger {
+    color: var(--danger);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 32px;
+    border-radius: 30px; /* Pill shape */
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    border: none;
+}
+
+.btn-download:hover {
+    background-color: var(--accent-hover);
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--light-bg);
+    border-radius: var(--card-radius);
+    border: 1px dashed var(--border);
+}

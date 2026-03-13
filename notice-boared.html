@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>नोटीस बोर्ड – जातेगाव</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="notice-board.css" />
+</head>
+
+<body>
+
+    <div class="container-page">
+        <!-- ── PAGE TITLE / INTRO ── -->
+        <header class="text-center mb-5">
+            <h1 class="fw-bolder" style="color: var(--navy-dark); font-size: 38px;">नोटीस बोर्ड</h1>
+            <p class="text-muted fs-5 fw-medium">
+                सभा व कार्यक्रमाच्या सुचना, जमा खर्च अहवाल, माहीतीचा अधिकार अंतर्गत माहीती
+            </p>
+        </header>
+
+        <!-- ── TABS ── -->
+        <div class="notice-tabs-wrapper">
+            <button class="notice-tab active" data-tab="tab-notice" type="button">नोटीस/ सूचना</button>
+            <button class="notice-tab" data-tab="tab-expense" type="button">जमा खर्च अहवाल</button>
+            <button class="notice-tab" data-tab="tab-rti" type="button">माहीतीचा अधिकार - RTI</button>
+        </div>
+
+        <!-- ── TAB PANELS ── -->
+        <div class="notice-board-panels">
+            
+            <!-- 1. Notices / सूचना Panel -->
+            <section class="notice-panel active" id="tab-notice">
+                <div class="panel-header">
+                    <i class="fa-solid fa-bell"></i>
+                    <h2 class="panel-title">नोटीस/सूचना</h2>
+                </div>
+
+                <!-- Masonry Grid Wrapper -->
+                <div class="notice-masonry-grid">
+                    
+                    <!-- Item 1 -->
+                    <article class="notice-card">
+                        <h3 class="notice-title">
+                            1. विकसित भारत-G RAM G अधिनियम 2025 बाबत माहिती देण्यासाठी दि.26/12/2025 रोजी सकाळी 10:00 वाजता ग्रामसभेचे आयोजन करण्यात आलेले आहे
+                        </h3>
+                        <div class="notice-meta">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <time datetime="2025-12-26">26/12/2025</time>
+                        </div>
+                        <div class="notice-status">
+                            <span class="notice-status-danger">File not available</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 2 -->
+                    <article class="notice-card">
+                        <h3 class="notice-title">
+                            2. घरकूल कार्यशाळा
+                        </h3>
+                        <div class="notice-meta">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <time datetime="2025-11-30">30/11/2025</time>
+                        </div>
+                        <div class="notice-status">
+                            <a class="btn-download" href="#">Download</a>
+                        </div>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article class="notice-card">
+                        <h3 class="notice-title">
+                            3. मासिकसभा
+                        </h3>
+                        <div class="notice-meta">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <time datetime="2025-11-27">27/11/2025</time>
+                        </div>
+                        <div class="notice-status">
+                            <a class="btn-download" href="#">Download</a>
+                        </div>
+                    </article>
+
+                    <!-- Item 4 -->
+                    <article class="notice-card">
+                        <h3 class="notice-title">
+                            4. सर्वसाधारण ग्रामसभा दि. २८/११/२०२५ रोजी ठेवण्यात आली आहे
+                        </h3>
+                        <div class="notice-meta">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <time datetime="2025-11-28">28/11/2025</time>
+                        </div>
+                        <div class="notice-status">
+                            <a class="btn-download" href="#">Download</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- 2. जमा खर्च अहवाल Panel (Empty) -->
+            <section class="notice-panel" id="tab-expense">
+                <div class="panel-header">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <h2 class="panel-title">जमा खर्च अहवाल</h2>
+                </div>
+                <div class="empty-state">
+                    सध्या कोणताही अहवाल उपलब्ध नाही.
+                </div>
+            </section>
+
+            <!-- 3. RTI Panel (Empty) -->
+            <section class="notice-panel" id="tab-rti">
+                <div class="panel-header">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h2 class="panel-title">माहीतीचा अधिकार - RTI</h2>
+                </div>
+                <div class="empty-state">
+                    सध्या कोणतीही RTI माहिती उपलब्ध नाही.
+                </div>
+            </section>
+
+        </div>
+    </div><!-- /container-page -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tab switching logic
+        document.querySelectorAll('.notice-tab').forEach(btn => {
+            btn.addEventListener('click', function () {
+                // Update active tab button style
+                document.querySelectorAll('.notice-tab').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                // Get target panel ID
+                const targetTab = this.dataset.tab;
+
+                // Hide all panels
+                document.querySelectorAll('.notice-panel').forEach(sec => {
+                    sec.classList.remove('active');
+                });
+                
+                // Show target panel smoothly
+                const target = document.getElementById(targetTab);
+                if (target) {
+                    // Force reflow for CSS animation reset
+                    void target.offsetWidth;
+                    target.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
